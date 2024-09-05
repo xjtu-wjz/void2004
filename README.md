@@ -48,5 +48,5 @@ In most cases, you only need to work in the `pages` folder.
 - `.vscode`: recommend some useful plugins & settings, you can preview icon/i18n/class...
 - `.github`: GitHub Actions to auto build & deploy to GitHub Pages
 - `netlify.toml`: for [netlify](https://www.netlify.com/)
-- `vercel.json`: for [vercel](https://vercel.com/) 
+- `vercel.json`: for [vercel](https://vercel.com/)  
  
