@@ -1,1 +1,1 @@
-void 的个人博客，使用(valaxy)[https://valaxy.site/guide/why] 驱动，主题为(hairy)[https://www.hairy.blog/posts/theme].
+void 的个人博客，使用[valaxy](https://valaxy.site/guide/why) 驱动，主题为[hairy](https://www.hairy.blog/posts/theme).
