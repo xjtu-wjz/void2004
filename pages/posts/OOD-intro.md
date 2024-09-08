@@ -3,6 +3,7 @@ title: OOD-intro
 date: 2023-09-22
 updated: 2024-09-07
 categories: Research
+image : https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/121043535_p0.1aoxfetb9a.webp
 tags:
   - OOD
   - 科研
