@@ -2,6 +2,7 @@
 title: 周记 week1
 date: 2024-09-01
 updated: 2022-09-01
+image: https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/p2.webp
 categories: 生活
 tags:
   - 周记
