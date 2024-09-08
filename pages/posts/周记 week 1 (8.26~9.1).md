@@ -1,5 +1,5 @@
 ---
-title: 周记 week1
+title: 周记 week1 (8.26~9.1)
 date: 2024-09-01
 updated: 2022-09-01
 image: https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/p2.webp
