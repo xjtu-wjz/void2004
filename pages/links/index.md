@@ -4,7 +4,6 @@ title: My Friends
 excerpt: "they are all great"
 waline: true
 ---
-# 这是测试
 
 
 # 感谢你们的陪伴
