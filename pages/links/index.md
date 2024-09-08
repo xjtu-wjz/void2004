@@ -44,7 +44,7 @@ waline: true
       image: 'https://avatars.githubusercontent.com/u/168283007?s=400&v=4',
       color: '#00ff00',
       desc: 'xjtu深度学习讨论班',
-    },
+    }, 
 
   ]"
 />
