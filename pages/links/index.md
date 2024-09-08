@@ -19,5 +19,12 @@ waline: true
       color: '#e9546b',
       desc: '计试李院士',
     },
+    {
+      name: 'Number-L',
+      url: 'https://number-l.github.io/',
+      image: 'https://avatars.githubusercontent.com/u/112866466?v=4',
+      color: '#87cefa',
+      desc: '我们的罗神',
+    },
   ]"
 />
