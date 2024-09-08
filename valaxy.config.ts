@@ -12,7 +12,28 @@ export default defineConfig<ThemeConfig>({
   url: 'http://www.void2024.top/',
   themeConfig:{
     theme: 'dark',
-    
+    home: {
+      title:"void's blog",
+      headline:"void's Blog",
+      description:"My name is void, welcome.",
+      images: [
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/atri.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/bocchi_the_rock.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/color.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/genshin.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/hollow_knight.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/li.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/miku1.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/miku3.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/miku4.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/shanjing.webp",
+        "https://github.com/xjtu-wjz/void2004/blob/main/pics/water_world.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/windows.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/yireyna.webp",
+        "https://pic.axi404.top/93141803_p0.ic1wc5z17.webp",
+        "https://pic.axi404.top/93141612_p0.54xox14iok.webp",
+      ]
+    },
     nav: [
       {
         text: 'Home',
