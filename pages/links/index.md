@@ -26,13 +26,6 @@ waline: true
       color: '#87cefa',
       desc: '罗神',
     },
-    {
-      name: 'XJTU-dl seminar',
-      url: 'https://xjtu-deeplearning-seminar.github.io/dl-discussion/',
-      image: 'https://avatars.githubusercontent.com/u/168283007?s=400&v=4',
-      color: '#00ff00',
-      desc: 'xjtu深度学习讨论班',
-    },
 
   ]"
 />
