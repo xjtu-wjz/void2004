@@ -28,7 +28,6 @@ waline: true
       color: '#87cefa',
       desc: '罗神',
     },
-
   ]"
 />
 
