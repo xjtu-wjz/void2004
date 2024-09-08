@@ -24,7 +24,34 @@ waline: true
       url: 'https://number-l.github.io/',
       image: 'https://avatars.githubusercontent.com/u/112866466?v=4',
       color: '#87cefa',
-      desc: '我们的罗神',
+      desc: '罗神',
     },
+    {
+      name: 'XJTU-dl seminar',
+      url: 'https://xjtu-deeplearning-seminar.github.io/dl-discussion/',
+      image: 'https://avatars.githubusercontent.com/u/168283007?s=400&v=4',
+      color: '#00ff00',
+      desc: 'xjtu深度学习讨论班',
+    },
+
+  ]"
+/>
+
+# 讨论班
+有意主讲或加入研讨会请联系kiyotakali。
+
+<br />
+<br />
+
+<hairy-links 
+  :links="[
+    {
+      name: 'XJTU-dl seminar',
+      url: 'https://xjtu-deeplearning-seminar.github.io/dl-discussion/',
+      image: 'https://avatars.githubusercontent.com/u/168283007?s=400&v=4',
+      color: '#00ff00',
+      desc: 'xjtu深度学习讨论班',
+    },
+
   ]"
 />
