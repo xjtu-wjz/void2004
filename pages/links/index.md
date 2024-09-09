@@ -1,6 +1,6 @@
 ---
 headline: Links
-title: My Friends
+title: 友人帐
 excerpt: "they are all great"
 waline: true
 ---
