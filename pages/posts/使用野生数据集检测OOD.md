@@ -1,5 +1,5 @@
 ---
-title: Paper-reading 2 使用野生数据集检测OOD
+title: Paper reading-2 使用野生数据集检测OOD
 date: 2024-05-05
 updated: 2022-09-06
 categories: Paper-reading
