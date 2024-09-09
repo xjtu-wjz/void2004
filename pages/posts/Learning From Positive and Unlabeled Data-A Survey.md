@@ -3,6 +3,7 @@ title: Paper reading-3 Learning From Positive and Unlabeled Data-A Survey
 date: 2024-09-03
 updated: 2022-09-03
 categories: Paper-reading
+image: https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/saber.webp
 tags:
   - 科研
   - PUL
