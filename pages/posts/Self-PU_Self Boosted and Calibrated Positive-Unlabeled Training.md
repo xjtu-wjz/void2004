@@ -74,7 +74,7 @@ $$
 $$\Theta_{1,t} = \beta\theta_{1,t-1} + (1 - \beta)\theta_{1,t} \quad (15)$$
 $$\Theta_{2,t} = \beta\theta_{2,t-1} + (1 - \beta)\theta_{2,t} \quad (15)$$
 
-其中例如$\theta_{1,t} $代表$\theta_{1}$在t时刻的值，其他类推。
+其中例如$\theta_{1,t}$代表$\theta_{1}$在t时刻的值，其他类推。
 
 现引入正则化损失项$L_{teacher}$进行约束：
 $$L_{\text{teachers}} = \sum_{x \in D} ||f(G_1(x)) - f(g_1(x))||_2 + \sum_{x \in D} ||f(G_2(x)) - f(g_2(x))||_2 \quad (16)$$
