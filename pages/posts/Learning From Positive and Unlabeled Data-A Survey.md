@@ -1,8 +1,8 @@
 ---
-title: Learning From Positive and Unlabeled Data-A Survey
+title: Paper reading-3 Learning From Positive and Unlabeled Data-A Survey
 date: 2024-09-03
 updated: 2022-09-03
-categories: Research
+categories: Paper-reading
 tags:
   - 科研
   - PUL
