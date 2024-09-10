@@ -11,7 +11,7 @@ export default defineConfig<ThemeConfig>({
   theme: 'hairy',
   url: 'http://www.void2024.top/',
   themeConfig:{
-    theme: 'dark',
+    theme: 'light',
     home: {
       title:"void's blog",
       headline:"void's Blog",
