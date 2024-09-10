@@ -1,5 +1,5 @@
 ---
-title: Paper reading-5 《Energy-based Out-of-distribution Detection》
+title: Paper reading--《Energy-based Out-of-distribution Detection》
 date: 2023-10-10
 updated: 2023-10-10
 categories: Paper-reading

@@ -1,5 +1,5 @@
 ---
-title: Paper reading-4 《Self-PU Self Boosted and Calibrated Positive-Unlabeled Training》
+title: Paper reading--《Self-PU Self Boosted and Calibrated Positive-Unlabeled Training》
 date: 2024-09-09
 updated: 2024-09-09
 categories: Paper-reading

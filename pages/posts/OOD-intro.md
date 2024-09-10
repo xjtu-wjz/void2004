@@ -1,5 +1,5 @@
 ---
-title: Paper reading-1 OOD-intro
+title: Paper reading--《OOD-intro》
 date: 2023-09-22
 updated: 2024-09-07
 categories: Paper-reading
