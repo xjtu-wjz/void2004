@@ -33,7 +33,7 @@ waline: true
 
 # 讨论班
 
-欢迎加入研讨，如有兴趣请联系kiyotakali。
+欢迎加入研讨，如有兴趣请联系[kiyotakali](2223312154@stu.xjtu.edu.cn)。
 
 <br />
 <br />
