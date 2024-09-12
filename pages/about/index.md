@@ -21,4 +21,4 @@ waline: true
 
 相信将来更多有意义的内容可以被放在博客上，一直以来博客创作都是属于极客的最为出色的创作载体之一，希望我也可以将其发扬光大。
 
-感谢您的阅读。My name is void, welcome.
+感谢您的阅读。My name is void, welcome.    
