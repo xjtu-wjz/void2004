@@ -16,7 +16,7 @@ export default defineConfig<ThemeConfig>({
       title:"void's blog",
       headline:"void's Blog",
       description:"My name is void, welcome.",
-      images: [
+      images: [ 
         "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/atri.webp",
         "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/bocchi_the_rock.webp",
         "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/color.webp",
