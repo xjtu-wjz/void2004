@@ -7,6 +7,7 @@ image: https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/sh
 tags:
   - 科研
   - PUL
+  - paper-posting
 top: 1
 ---
 # Preliminary
