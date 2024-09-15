@@ -31,6 +31,8 @@ export default defineConfig<ThemeConfig>({
         "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/yireyna.webp",
         "https://pic.axi404.top/93141803_p0.ic1wc5z17.webp",
         "https://pic.axi404.top/93141612_p0.54xox14iok.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/frelian.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/landscape.webp",
       ]
     },
     nav: [
