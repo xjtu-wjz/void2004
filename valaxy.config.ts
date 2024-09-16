@@ -33,6 +33,14 @@ export default defineConfig<ThemeConfig>({
         "https://pic.axi404.top/93141612_p0.54xox14iok.webp",
         "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/frelian.webp",
         "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/landscape.webp",
+        "pics/6fec6604850242451a5cba9d48674a8.webp",
+        "pics/8fa8b1c5babb044938e7c6b5f05a725.webp",
+        "pics/miku.webp",
+        "pics/屏幕截图 2024-09-16 232448.webp",
+        "pics/屏幕截图 2024-09-16 232702.webp",
+        "pics/屏幕截图 2024-09-16 232857.webp",
+        "pics/屏幕截图 2024-09-16 233146.webp",
+        "pics/屏幕截图 2024-09-16 233448.webp",
       ]
     },
     nav: [
