@@ -1,7 +1,7 @@
 ---
 title: ECML-PKDD 2025投稿日记
-date: 2024-9-12
-updated: 2024-9-12
+date: 2024-9-17
+updated: 2024-9-17
 categories: Research
 image: https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/shark.webp
 tags:
