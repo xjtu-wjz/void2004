@@ -28,6 +28,13 @@ waline: true
       color: '#87cefa',
       desc: '罗神',
     },
+    {
+      name: 'wry404',
+      url: 'https://www.wry404.top/',
+      image: 'https://avatars.githubusercontent.com/u/143403659?v=4',
+      color: '#ffd700',
+      desc: '狗子',
+    },
   ]"
 />
 
