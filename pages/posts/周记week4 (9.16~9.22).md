@@ -2,7 +2,7 @@
 title: 周记 week4 (9.16~9.22)
 date: 2024-09-22
 updated: 2022-09-22
-image: https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/lingyin.webp
+image: https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/e9e1e3cc5653b98e9000450c66c6b58.webp
 categories: 生活
 tags:
   - 周记

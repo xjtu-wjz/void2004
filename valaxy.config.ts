@@ -40,6 +40,9 @@ export default defineConfig<ThemeConfig>({
         "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-09-16%20232857.webp",
         "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-09-16%20233146.webp",
         "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-09-16%20233448.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics/22cb88192f4f6a29cfafb3bf0d14158.webp",
+        "https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics/a0aa378d81c4bb376f545c273863ee7.webp",
+        
       ]
     },
     nav: [
