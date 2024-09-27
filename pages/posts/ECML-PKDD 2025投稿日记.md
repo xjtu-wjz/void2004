@@ -1,7 +1,7 @@
 ---
 title: ECML-PKDD 2025投稿日记
-date: 2024-9-20
-updated: 2024-9-20
+date: 2024-9-27
+updated: 2024-9-27
 categories: Research
 image: https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/shark.webp
 tags:
@@ -73,4 +73,8 @@ intro写完了，但是思索再三决定还是要把OOD去掉。现在加上OOD
 - 9.25就差不多可以开始想想conclusion。
 
 中间要一直去试alzheimer数据集还有柱状图也要画。最头疼的还得是alzheimer，不开源真的是太苦后面的研究者了，有点死无对证的感觉。希望能给他硬调调到纸面的效果。
+
+# 9.27 加快进度，补图，补实验
+一周之后久违的更新~前一周确实有点太忙了。之前的规划只完成了90%，实验部分直到现在才写完。第一版论文还很稚嫩，可以预见的是还需要很多很多轮迭代。而且几张图还没有画，必须得加速了。
+
 
