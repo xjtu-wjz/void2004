@@ -1,0 +1,156 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "void’s blog",
+    "home_page_url": "http://www.void2024.top/",
+    "feed_url": "http://www.void2024.top/feed.json",
+    "description": "你好，我是void,欢迎",
+    "icon": "https://avatars.githubusercontent.com/u/123150988?s=400&u=61225ea1289724b1fbeaea0089ebb453d7ab07f9&v=4",
+    "author": {
+        "name": "void",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<h1>Preliminary</h1>\n<p>此帖用于记录赶稿ECML-PKDD2025的具体工作细节和心路历程。如果中了，希望能给后面投稿的学弟学妹一些启示与参考；如果没有的话（好像大概率中不了hhh）也无所谓，发</p>\n<br/><p>访问 <a href=\"http://www.void2024.top/posts/ECML-PKDD 2025投稿日记\" target=\"_blank\">http://www.void2024.top/posts/ECML-PKDD 2025投稿日记</a> 阅读全文。</p>",
+            "url": "http://www.void2024.top/posts/ECML-PKDD 2025投稿日记",
+            "title": "ECML-PKDD 2025投稿日记",
+            "image": "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/shark.webp",
+            "date_modified": "2024-10-07T00:00:00.000Z",
+            "date_published": "2024-10-07T00:00:00.000Z",
+            "author": {
+                "name": "void",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>这篇长文其实是前几天班会开完之后的写的，当时直接发在空间里，还是引起了不少同学的共鸣。现在把他搬过来。</p>\n<p>原文：</p>\n<p>吐槽/谈本科生进组科研/谈大三上进组<br>\n（全文很长，而且有些话不吐不快，攻击性会非常</p>\n<br/><p>访问 <a href=\"http://www.void2024.top/posts/班会感想（补档）\" target=\"_blank\">http://www.void2024.top/posts/班会感想（补档）</a> 阅读全文。</p>",
+            "url": "http://www.void2024.top/posts/班会感想（补档）",
+            "title": "班会感想（补档）",
+            "image": "https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-09-17%20175054.webp",
+            "date_modified": "2024-09-25T00:00:00.000Z",
+            "date_published": "2024-09-25T00:00:00.000Z",
+            "author": {
+                "name": "void",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>self-PU</h1>\n<p>文章提出了一种新颖的PUL问题框架。先前的PUL方法集中精力于损失敏感上面，直接将未标记样本作为负样本进行损失优化，然后对于未标记样本中各个样本赋予不同权重进行学习。问题也很明显</p>\n<br/><p>访问 <a href=\"http://www.void2024.top/posts/Self-PU_Self Boosted and Calibrated Positive-Unlabeled Training\" target=\"_blank\">http://www.void2024.top/posts/Self-PU_Self Boosted and Calibrated Positive-Unlabeled Training</a> 阅读全文。</p>",
+            "url": "http://www.void2024.top/posts/Self-PU_Self Boosted and Calibrated Positive-Unlabeled Training",
+            "title": "Paper reading--《Self-PU Self Boosted and Calibrated Positive-Unlabeled Training》",
+            "image": "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/frena.webp",
+            "date_modified": "2024-09-09T00:00:00.000Z",
+            "date_published": "2024-09-09T00:00:00.000Z",
+            "author": {
+                "name": "void",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>OOD简介</h1>\n<p>OOD（out of distribution detection）是异常检测（Anomaly Detection）领域的一个重要分支，通俗来讲OOD检测的任务就是**识别出分布与模型</p>\n<br/><p>访问 <a href=\"http://www.void2024.top/posts/OOD-intro\" target=\"_blank\">http://www.void2024.top/posts/OOD-intro</a> 阅读全文。</p>",
+            "url": "http://www.void2024.top/posts/OOD-intro",
+            "title": "Paper reading--《OOD-intro》",
+            "image": "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/121043535_p0.1aoxfetb9a.webp",
+            "date_modified": "2023-09-22T00:00:00.000Z",
+            "date_published": "2024-09-07T00:00:00.000Z",
+            "author": {
+                "name": "void",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>能量分数概述</h1>\n<p>首先什么是能量分数方法介绍：</p>\n<p>一个模型区分OOD和ID数据的主要依据是它们的能量分数，这个就是energy-based方法。</p>\n<p>大致流程是这样：</p>\n<p>![alt text](..</p>\n<br/><p>访问 <a href=\"http://www.void2024.top/posts/Energy-based Out-of-distribution Detection\" target=\"_blank\">http://www.void2024.top/posts/Energy-based Out-of-distribution Detection</a> 阅读全文。</p>",
+            "url": "http://www.void2024.top/posts/Energy-based Out-of-distribution Detection",
+            "title": "Paper reading--《Energy-based Out-of-distribution Detection》",
+            "image": "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/liuhua.webp",
+            "date_modified": "2023-10-10T00:00:00.000Z",
+            "date_published": "2023-10-10T00:00:00.000Z",
+            "author": {
+                "name": "void",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>平稳的一周，一边推进论文一边过日子，中间放了个中秋的假，好玩的事其实也不少，当然糟心的事也有。</p>\n<h1>钓鱼</h1>\n<p>跟罗神他们一起六个人跑去钓鱼，着实二十岁的年纪，三十岁的身体，四十岁的爱好了。深刻感受到钓</p>\n<br/><p>访问 <a href=\"http://www.void2024.top/posts/周记week4 (9.16~9.22)\" target=\"_blank\">http://www.void2024.top/posts/周记week4 (9.16~9.22)</a> 阅读全文。</p>",
+            "url": "http://www.void2024.top/posts/周记week4 (9.16~9.22)",
+            "title": "周记 week4 (9.16~9.22)",
+            "image": "https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/ee19160f4316289d26edeb98fab655e.webp",
+            "date_modified": "2024-09-22T00:00:00.000Z",
+            "date_published": "2022-09-22T00:00:00.000Z",
+            "author": {
+                "name": "void",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>开学的第一个星期(*´▽｀)ノノ，精神状态明显比上学期好多了。课内成绩基本上再也不用花太多时间精力，重心可以放在科研，每天的生活不像大一大二那样兵荒马乱了，科研看书打球打游戏，安排的明明白白。</p>\n<h1></h1>\n<br/><p>访问 <a href=\"http://www.void2024.top/posts/周记 week3 (9.9~9.15)\" target=\"_blank\">http://www.void2024.top/posts/周记 week3 (9.9~9.15)</a> 阅读全文。</p>",
+            "url": "http://www.void2024.top/posts/周记 week3 (9.9~9.15)",
+            "title": "周记 week3 (9.9~9.15)",
+            "image": "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/lingyin.webp",
+            "date_modified": "2024-09-15T00:00:00.000Z",
+            "date_published": "2022-09-15T00:00:00.000Z",
+            "author": {
+                "name": "void",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>这一周</h1>\n<p>百无聊赖的一周捏，然后回了学校。科研没咋做，趁着开学前最后好好玩了玩，开学后也许有更多故事可以说说。</p>\n<br/><p>访问 <a href=\"http://www.void2024.top/posts/周记 week2 (9.2~9.8)\" target=\"_blank\">http://www.void2024.top/posts/周记 week2 (9.2~9.8)</a> 阅读全文。</p>",
+            "url": "http://www.void2024.top/posts/周记 week2 (9.2~9.8)",
+            "title": "周记 week2 (9.2~9.8)",
+            "image": "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/02.webp",
+            "date_modified": "2024-09-09T00:00:00.000Z",
+            "date_published": "2022-09-09T00:00:00.000Z",
+            "author": {
+                "name": "void",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>使用无标签数据预测OOD--HOW DOES UNLABELED DATA PROVABLY HELP OUT-OF-DISTRIBUTION DETECTION</p>\n<p>原文链接：[2402.0350</p>\n<br/><p>访问 <a href=\"http://www.void2024.top/posts/使用野生数据集检测OOD\" target=\"_blank\">http://www.void2024.top/posts/使用野生数据集检测OOD</a> 阅读全文。</p>",
+            "url": "http://www.void2024.top/posts/使用野生数据集检测OOD",
+            "title": "Paper reading--《使用野生数据集检测OOD》",
+            "date_modified": "2024-05-05T00:00:00.000Z",
+            "date_published": "2022-09-06T00:00:00.000Z",
+            "author": {
+                "name": "void",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>论文通篇简述了PU-learning几个经典的问题，并且详细介绍了PUL到底是什么。</p>\n<h1>PU-learning与传统半监督学习</h1>\n<p>PU-learning是传统半监督学习的变种，与传统半监督学习</p>\n<br/><p>访问 <a href=\"http://www.void2024.top/posts/Learning From Positive and Unlabeled Data-A Survey\" target=\"_blank\">http://www.void2024.top/posts/Learning From Positive and Unlabeled Data-A Survey</a> 阅读全文。</p>",
+            "url": "http://www.void2024.top/posts/Learning From Positive and Unlabeled Data-A Survey",
+            "title": "Paper reading--《Learning From Positive and Unlabeled Data-A Survey》",
+            "image": "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/saber.webp",
+            "date_modified": "2024-09-03T00:00:00.000Z",
+            "date_published": "2022-09-03T00:00:00.000Z",
+            "author": {
+                "name": "void",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>关于这个网站</h2>\n<p>开始写的第一篇周记，其实博客很早就建好了只是一直没有往上面更新东西。voidmyworld存在的重要原因一方面是我希望能找到一个形式更加自由的空间存我想写的东西。身为一个攻击性</p>\n<br/><p>访问 <a href=\"http://www.void2024.top/posts/周记 week1 (8.26~9.1)\" target=\"_blank\">http://www.void2024.top/posts/周记 week1 (8.26~9.1)</a> 阅读全文。</p>",
+            "url": "http://www.void2024.top/posts/周记 week1 (8.26~9.1)",
+            "title": "周记 week1 (8.26~9.1)",
+            "image": "https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/p2.webp",
+            "date_modified": "2024-09-01T00:00:00.000Z",
+            "date_published": "2022-09-01T00:00:00.000Z",
+            "author": {
+                "name": "void",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}
