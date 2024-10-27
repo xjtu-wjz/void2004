@@ -1,5 +1,5 @@
 ---
-title: Paper reading--《EduChat: A Large-Scale Language Model-based Chatbot System
+title: Paper reading--《EduChat-A Large-Scale Language Model-based Chatbot System
  for Intelligent Education》
 date: 2024-10-27
 updated: 2024-10-27
