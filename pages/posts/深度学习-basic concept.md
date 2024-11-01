@@ -64,7 +64,7 @@ $$score(q,K_1)=q*K_1$$
 $$score(q,K_2)=q*K_2$$
 $$score(q,K_3)=q*K_3$$
 使用softmax将兼容性分数转化为权重：
-$$[\text{weight}_1 = \frac{\exp(\text{score}(q, k_1))}{\sum_{i=1}^3 \exp(\text{score}(q, k_i))}]$$
+$$[weight_1 = \frac{\exp(\text{score}(q, k_1))}{\sum_{i=1}^3 \exp(\text{score}(q, k_i))}]$$
 $$[\text{weight}_2 = \frac{\exp(\text{score}(q, k_2))}{\sum_{i=1}^3 \exp(\text{score}(q, k_i))}]$$
 $$[\text{weight}_3 = \frac{\exp(\text{score}(q, k_3))}{\sum_{i=1}^3 \exp(\text{score}(q, k_i))}]$$
 
