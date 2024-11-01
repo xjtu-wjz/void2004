@@ -2,7 +2,7 @@
 title: 周记 week5 (10.7~10.13)
 date: 2024-10-13
 updated: 2022-10-13
-image: https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/week5.webp
+image: https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/week5_new.webp
 categories: 生活
 tags:
   - 周记
