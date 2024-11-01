@@ -4,7 +4,7 @@ title: Paper reading--《EduChat-A Large-Scale Language Model-based Chatbot Syst
 date: 2024-10-27
 updated: 2024-10-27
 categories: Paper-reading
-image: https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/saber.webp
+image: https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/educhat.webp
 tags:
   - 科研
   - LLM
