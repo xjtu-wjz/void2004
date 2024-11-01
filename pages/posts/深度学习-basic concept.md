@@ -1,11 +1,33 @@
 ---
-title: Paper reading--《EduChat-A Large-Scale Language Model-based Chatbot System
- for Intelligent Education》
+title: 深度学习基础概念
 date: 2024-11-01
 updated: 2024-11-01
 categories: Research
-image: https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/saber.webp
+image: https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/deep-learning_basic.webp
 tags:
   - 科研
 top: 1
 ---
+
+近几年深度学习领域的基础概念和模型基础。
+
+# 残差连接
+在传统神经网络中，信息会从一个层传递到下一个层，在传递的过程中会损失部分信息。在残差连接技术中，在原本layer的输出基础上又加了一个跨层的输出，将该层的输入加在了输出上，从而保留更多的信息。这个跨层链接可以看做是一个从输入到输出的捷径。
+
+残差连接的公式为：
+$$y=f(x)+x$$
+
+前向传播时，输出和输入加在一起，作为该层新的输出传递到下一层进行处理；反向传播中，残差连接使得梯度可以更容易地传递到之前的层，加速模型收敛。
+
+到这里就是残差连接的全部思想。我们不妨再多看一点：为何需要这一步捷径(skip connect)呢？
+
+我们知道，神经网络通过误差损失的链式反向传播来更新参数，在一定程度上，模型的性能当然是层数越多，性能越好。但是对于计算过程中的多次求导来看：
+![alt text](../../materials/8fbd303ea5c929ef86273491a7099059.png)
+
+其中$cost$对x求导为：
+
+![alt text](../../materials/8adaaf0a702c5b3a00c7c3071016c58c.png)
+
+一旦其中一个导数非常小，就很有可能出现一系列导数求导最后发生梯度消散。但如果使用残差链接，那么梯度的最小值也能保证有一个常数项1，这时候即便有一层的导数非常小，损失也可以顺利反向传播。
+
+残差连接的作用不仅于此，还可以挽救训练过程中权重矩阵的退化。详细可见resnet原论文。
