@@ -64,9 +64,9 @@ $$score(q,K_1)=q*K_1$$
 $$score(q,K_2)=q*K_2$$
 $$score(q,K_3)=q*K_3$$
 使用softmax将兼容性分数转化为权重：
-$$\[\text{weight}_1 = \frac{\exp(\text{score}(q, k_1))}{\sum_{i=1}^3 \exp(\text{score}(q, k_i))}\]$$
-$$\[\text{weight}_2 = \frac{\exp(\text{score}(q, k_2))}{\sum_{i=1}^3 \exp(\text{score}(q, k_i))}\]$$
-$$\[\text{weight}_3 = \frac{\exp(\text{score}(q, k_3))}{\sum_{i=1}^3 \exp(\text{score}(q, k_i))}\]$$
+$$[\text{weight}_1 = \frac{\exp(\text{score}(q, k_1))}{\sum_{i=1}^3 \exp(\text{score}(q, k_i))}]$$
+$$[\text{weight}_2 = \frac{\exp(\text{score}(q, k_2))}{\sum_{i=1}^3 \exp(\text{score}(q, k_i))}]$$
+$$[\text{weight}_3 = \frac{\exp(\text{score}(q, k_3))}{\sum_{i=1}^3 \exp(\text{score}(q, k_i))}]$$
 
 这就是每一维元素获得的权重，最后将他们与值向量相乘求和即可得到输出向量：
 $$\[\text{output} = \text{weight}_1 \cdot \mathbf{v}_1 + \text{weight}_2 \cdot \mathbf{v}_2 + \text{weight}_3 \cdot \mathbf{v}_3\]$$
