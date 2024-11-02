@@ -29,5 +29,25 @@ $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)
 $$LayerNorm=x+SubLayer(x)$$
 $$SubLayer(x)=\text{max}(0, xW_1 + b_1)W_2 + b_2$$
 
-子层用于进一步通过线性变换提取信息，可以理解为两个size = 1的卷积核的拼接。
+子层用于进一步通过线性变换提取信息，可以理解为两个size = 1的卷积核的拼接。模型结构图如下：
 
+![alt text](../../materials/attention.png)
+
+同时还采用了多头注意力机制。多头注意力机制即在每一层encoder和decoder中加入多个注意力层。原本只有一个attention layer,现在我们数量加到h,每一个attention layer和一层一样正常计算$Q,K,V$并得到输出。之后我们将每一个头的输出组合在一起，乘以权重矩阵$W^O$得到该层输出。
+$$ \text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, \ldots, \text{head}_h)W^O $$
+where
+$$ \text{head}_i = \text{Attention}(QW_i^Q, KW_i^K, VW_i^V) $$
+
+原注意力机制和现多头注意力机制区别如下：
+
+![alt text](../../materials/attention2.png)
+
+# 位置编码
+transformer不像其他网络那样具有循环或者卷积结构，因此需要显示给出位置信息，令transformer在训练的过程中同时考虑元素位置。
+
+$$ \text{PE}(\text{pos}, 2i) = \sin\left(\frac{\text{pos}}{10000^{2i/d_{\text{model}}}}\right) $$
+$$ \text{PE}(\text{pos}, 2i+1) = \cos\left(\frac{\text{pos}}{10000^{2i/d_{\text{model}}}}\right) $$
+
+其中pos是位置，$i$指维度。得出的位置编码和模型输入输出的维度相同，因此直接将位置编码放在encoder stack和decoder stack的底部与嵌入向量求和即可。
+
+需要注意的是，在decoder中还需要额外令序列中当前位置之后的维度的权重为负无穷大，以控制防止向左的信息流干扰当前模型的输出。
