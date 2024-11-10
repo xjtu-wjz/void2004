@@ -7,7 +7,7 @@ categories: Paper-reading
 image: https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2024-11-08%20142919.webp
 tags:
   - 科研
-  - Generative model
+  - Generative Models
 top: 1
 ---
 

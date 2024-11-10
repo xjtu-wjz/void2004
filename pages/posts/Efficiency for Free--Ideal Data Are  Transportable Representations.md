@@ -6,7 +6,7 @@ categories: Paper-reading
 image: https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/100468452_p0.webp
 tags:
   - 科研
-  - LLM
+  - DCAI
 top: 1
 ---
 

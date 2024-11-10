@@ -6,7 +6,7 @@ categories: Paper-reading
 image: https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/DENOISING%20DIFFUSION%20IMPLICIT%20MODELS.webp
 tags:
   - 科研
-  - LLM
+  - Generative Models
 top: 1
 ---
 
