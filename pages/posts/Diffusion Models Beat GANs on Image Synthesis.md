@@ -1,5 +1,5 @@
 ---
-title: Paper reading--classifier guidance and classifier-free guidancec
+title: Paper reading--classifier guidance and classifier-free guidance
 date: 2024-11-10
 updated: 2024-11-10
 categories: Paper-reading
