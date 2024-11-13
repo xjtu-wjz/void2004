@@ -29,3 +29,11 @@ $$\Delta\rho = \frac{(\rho_{top} - \rho_{bottom})}{k}, \quad \rho_i = \rho_{bott
 
 本质上是对U-net的不同层加以不同权重，来缓解由于skip-connection导致的对push-forward的影响。
 
+
+# DeepCache: Accelerating Diffusion Models for Free
+我们已经基本了解了U-net在扩散模型中的应用--主要用于学习噪声，在采样过程中去噪。对于采样过程中U-net的去噪学习过程而言，我们还是认为计算损失太大了，U——net的多层结构，经过层层计算的开销还是不小。与此同时我们发现在去噪过程中，相邻几步的U-net学习到的噪声特征，尤其是在深层，几乎是一样的，这篇论文基于这个发现提出了一种方法：使用一个cache结构存储$x_{t}$步时对应的U-net深层得到的特征，在后面相邻的k步直接使用cache存储的特征去噪，就不用再额外学习了。
+
+示意图如下：
+
+![alt text](../../materials/DC1.png)
+
