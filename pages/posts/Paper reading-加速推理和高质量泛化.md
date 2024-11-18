@@ -40,7 +40,11 @@ $$\Delta\rho = \frac{(\rho_{top} - \rho_{bottom})}{k}, \quad \rho_i = \rho_{bott
 
 # DPM-Solver-A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps
 
+  
+
 在若干步之内完成DPM反向去噪的过程，极大加速训练流程。
+
+  
 
   
 
@@ -48,9 +52,15 @@ $$\Delta\rho = \frac{(\rho_{top} - \rho_{bottom})}{k}, \quad \rho_i = \rho_{bott
 
   
 
+  
+
 #### Related work
 
+  
+
 原本的预训练过程中的加噪过程是：
+
+  
 
   
 
@@ -58,7 +68,11 @@ $$q_{0t}(x_t | x_0) = \mathcal{N}(x_t | \alpha(t) x_0, \sigma^2(t) I),$$
 
   
 
+  
+
 后被证明可以被转换为微分方程形式：
+
+  
 
   
 
@@ -66,7 +80,11 @@ $$dx_t = f(t)x_t dt + g(t)dw_t, x_0 ~ q_0(x_0),$$
 
   
 
+  
+
 并有这样的逆过程去噪形式：
+
+  
 
   
 
@@ -74,7 +92,11 @@ $$dx_t = [f(t)x_t - g^2(t)∇_x log q_t(x_t)]dt + g(t)dw_t, x_T \sim q_T(x_T),$$
 
   
 
+  
+
 其中$\hat{w_{t}}$是逆时间的标准维纳过程，而且：
+
+  
 
   
 
@@ -82,7 +104,11 @@ $$f(t) = frac{d log alpha_t}{dt}, g^2(t) = frac{d sigma_t^2}{dt} - 2 frac{d log 
 
   
 
+  
+
 其中唯一未知的是$\nabla_x \log q_t(x_t)$, 通常转换为$-\epsilon_\theta(x_t, t) / \sigma_t$,交给神经网络学习。
+
+  
 
   
 
@@ -90,7 +116,11 @@ $$f(t) = frac{d log alpha_t}{dt}, g^2(t) = frac{d sigma_t^2}{dt} - 2 frac{d log 
 
   
 
+  
+
 $$\frac{d x_t}{d t} = f(t) x_t - \frac{1}{2} g^2(t) \nabla_t \log q_t(x_t)$$
+
+  
 
   
 
@@ -98,18 +128,27 @@ $$\frac{d x_t}{d t} = f(t) x_t - \frac{1}{2} g^2(t) \nabla_t \log q_t(x_t)$$
 
   
 
+  
+
 $$\frac{d \mathbf{x}_t}{d t} = \mathbf{h}_{\theta}(\mathbf{x}_t, t) := f(t)\mathbf{x}_t + \frac{g^2(t)}{2\sigma_t}\boldsymbol{\epsilon}_{\theta}(\mathbf{x}_t, t), \quad \mathbf{x}_T \sim \mathcal{N}(0, \tilde{\sigma}^2 I).$$
+
+  
 
   
 
 使用精心设计的ODE求解器可以快速求解ODE方程。但是目前针对更少的步数(例如十步以内)的生成质量不佳，因此尝试探索更巧妙的ODE求解器。
 
   
+
   
 
 #### Method
 
+  
+
 先前的ODE求解策略是：直接将整个方程$h(x,t)$交给求解器计算，但是忽略了ODE的形式可以分为两部分：左侧$f(x)x_{t}$可以看成线性部分，而右侧是和神经网络有关的非线性部分。
+
+  
 
   
 
@@ -117,7 +156,11 @@ $$\frac{d \mathbf{x}_t}{d t} = \mathbf{h}_{\theta}(\mathbf{x}_t, t) := f(t)\math
 
   
 
+  
+
 $$x_t = e^{ \int_s^t f(\tau) d\tau } x_s + \int_s^t e^{(t-r)f(r)} g^2(r) \nabla_x \log q_r(x_r; \theta) dr （1）$$
+
+  
 
   
 
@@ -125,7 +168,11 @@ $$x_t = e^{ \int_s^t f(\tau) d\tau } x_s + \int_s^t e^{(t-r)f(r)} g^2(r) \nabla_
 
   
 
+  
+
 $$g^2(t) = \frac{\mathrm{d}\sigma_t^2}{\mathrm{d}t} - 2\frac{\mathrm{d}\log\alpha_t}{\mathrm{d}t}\sigma_t^2 = 2\sigma_t^2\left(\frac{\mathrm{d}\log\sigma_t}{\mathrm{d}t} - \frac{\mathrm{d}\log\alpha_t}{\mathrm{d}t}\right) = -2\sigma_t^2\frac{\mathrm{d}\lambda_t}{\mathrm{d}t}.$$
+
+  
 
   
 
@@ -133,7 +180,11 @@ $$g^2(t) = \frac{\mathrm{d}\sigma_t^2}{\mathrm{d}t} - 2\frac{\mathrm{d}\log\alph
 
   
 
+  
+
 $$x_t = frac{x_s}{alpha_s} - alpha_t int_S^t (frac{dlambda_T}{dT}) frac{sigma_T}{epsilon_theta(x_T, T)dT}$$
+
+  
 
   
 
@@ -141,7 +192,11 @@ $$x_t = frac{x_s}{alpha_s} - alpha_t int_S^t (frac{dlambda_T}{dT}) frac{sigma_T}
 
   
 
-$$\[ x_t = \frac{\alpha_t}{\alpha_s} x_s - \alpha_t \int_{\lambda_s}^{\lambda_t} e^{-\hat{\epsilon}_\theta(\hat{x}_\lambda, \lambda)} d\lambda. \]$$
+  
+
+$$[ x_t = \frac{\alpha_t}{\alpha_s} x_s - \alpha_t \int_{\lambda_s}^{\lambda_t} e^{-\hat{\epsilon}_\theta(\hat{x}_\lambda, \lambda)} d\lambda. ]$$
+
+  
 
   
 
@@ -149,7 +204,11 @@ $$\[ x_t = \frac{\alpha_t}{\alpha_s} x_s - \alpha_t \int_{\lambda_s}^{\lambda_t}
 
   
 
+  
+
 $$\hat{e}_{\theta}(\hat{x}_{\lambda}, \lambda) = \sum_{n=0}^{k-1} \frac{(\lambda - \lambda_{t_i-1})^n}{n!} \hat{e}_{\theta}^{(n)}(\hat{x}_{\lambda_{t_i-1}}, \lambda_{t_i-1}) + \mathcal{O}((\lambda - \lambda_{t_i-1})^k),$$
+
+  
 
   
 
@@ -157,7 +216,11 @@ $$\hat{e}_{\theta}(\hat{x}_{\lambda}, \lambda) = \sum_{n=0}^{k-1} \frac{(\lambda
 
   
 
+  
+
 $$\mathbf{x}_{t_{i-1} \rightarrow t_i} = \frac{\alpha_{t_i}}{\alpha_{t_{i-1}}} \tilde{\mathbf{x}}_{t_{i-1}} - \alpha_{t_i} \sum_{n=0}^{k-1} \hat{\boldsymbol{\epsilon}}_{{\theta}}^{(n)} (\hat{\mathbf{x}}_{\lambda_{t_{i-1}}}, \lambda_{t_{i-1}}) \int_{\lambda_{t_{i-1}}}^{\lambda_{t_i}} e^{-\lambda} \frac{(\lambda - \lambda_{t_{i-1}})^n}{n!} d\lambda + \mathcal{O}(h_i^{k+1}),$$
+
+  
 
   
 
