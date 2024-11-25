@@ -107,7 +107,7 @@ export default defineConfig<ThemeConfig>({
     // 请参考 https://waline.js.org/ 设置 serverURL 地址
     addonWaline({
       comment: true,
-      serverURL: 'https://waline.void2024.top/',
+      serverURL: 'https://void2024.vercel.app/',
       emoji: [/*  */],
       pageview: true,
     }),
