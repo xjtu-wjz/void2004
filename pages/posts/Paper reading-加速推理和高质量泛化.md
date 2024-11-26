@@ -92,3 +92,34 @@ $$
 
 针对具体下游任务的数据分布情况，选择较小的上界来约束。
 
+我们得到了关于均值和方差的解析估计和上下界估计，现在我们讨论如何利用解析最优估计轨迹来优化模型推理。
+
+反向扩散过程可以表示成如下过程：
+
+$$p(\boldsymbol{x}_0, \boldsymbol{x}_{\tau_1}, \cdots, \boldsymbol{x}_{\tau_K}) = p(\boldsymbol{x}_{\tau_K}) \prod_{k=1}^{K} p(\boldsymbol{x}_{\tau_{k-1}} | \boldsymbol{x}_{\tau_k})$$
+
+其中：
+
+$$p(\boldsymbol{x}_{\tau_{k-1}} | \boldsymbol{x}_{\tau_k}) = \mathcal{N}(\boldsymbol{x}_{\tau_{k-1}} | \boldsymbol{\mu}_{\tau_{k-1}|\tau_k}(\boldsymbol{x}_{\tau_k}), \sigma^2_{\tau_{k-1}|\tau_k} \boldsymbol{I})$$
+
+同样的正向扩散过程可以表示成如下：
+
+$$q(\boldsymbol{x}_{\tau_{k-1}} | \boldsymbol{x}_{\tau_k}, \boldsymbol{x}_0) = \mathcal{N}(\boldsymbol{x}_{\tau_{k-1}} | \tilde{\boldsymbol{\mu}}_{\tau_{k-1}|\tau_k}(\boldsymbol{x}_{\tau_k}, \boldsymbol{x}_0), \lambda^2_{\tau_{k-1}|\tau_k} \boldsymbol{I})$$
+
+$$\tilde{\boldsymbol{\mu}}_{\tau_{k-1}|\tau_k}(\boldsymbol{x}_{\tau_k}, \boldsymbol{x}_0) = \sqrt{\alpha_{\tau_{k-1}}} \boldsymbol{x}_0 + \frac{\sqrt{\beta_{\tau_k}} - \lambda^2_{\tau_{k-1}|\tau_k}}{\sqrt{\beta_{\tau_k}}} \cdot \frac{\boldsymbol{x}_{\tau_k} - \sqrt{\alpha_{\tau_k}} \boldsymbol{x}_0}{\sqrt{\beta_{\tau_k}}}$$
+
+
+借用之前的结论，使用一个已经预训练好的分数模型来预测分数函数均方范数梯度可以将方差计算公式简化如下：
+
+$$\hat{\sigma}^2_{\tau_{k-1}|\tau_k} = \lambda^2_{\tau_{k-1}|\tau_k} + \left( \sqrt{\frac{\bar{\beta}_{\tau_k}}{\alpha_{\tau_k|\tau_{k-1}}}} - \sqrt{\bar{\beta}_{\tau_{k-1}}} - \lambda^2_{\tau_{k-1}|\tau_k} \right)^2 (1 - \bar{\beta}_{\tau_k} \Gamma_{\tau_k})$$
+
+现在要进行训练，我们只需要优化正向反向路径$q和p$的KL散度：
+
+$$\min_{\tau_1,\cdots,\tau_K} D_{KL}(q(\boldsymbol{x}_0, \boldsymbol{x}_{\tau_1}, \cdots, \boldsymbol{x}_{\tau_K}) \| p^*(\boldsymbol{x}_0, \boldsymbol{x}_{\tau_1}, \cdots, \boldsymbol{x}_{\tau_K})) = \frac{d}{2} \sum_{k=2}^{K} J(\tau_{k-1}, \tau_k) + c,$$
+
+其中
+
+$$J(\tau_{k-1}, \tau_k) \approx \log (\hat{\sigma}^2_{\tau_{k-1}|\tau_k} / \lambda^2_{\tau_{k-1}|\tau_k})$$
+
+简单来说，这个方法将轨迹优化问题转化为了一个有向图上的最短路径问题，成本函数就是$J(.,.)$.每一个成本函数都可以直接简单计算得到，不需要复杂的网络训练。对于连续时间步长的扩散模型，依然可以将KL散度优化过程拆分成不同时间段分数函数的项值的和，因此依然适用。
+
