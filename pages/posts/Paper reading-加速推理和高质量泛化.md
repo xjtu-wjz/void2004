@@ -167,3 +167,12 @@ $$\mathcal{L}_{CD}^N(\theta, \theta^-; \phi) := \mathbb{E}[\lambda(t_n)d(f_{\the
 
 ![alt text](../../materials/CM2.png)
 
+文章还提出可以使用完全独立的一致性模型训练方法，而不需要预训练一个分数模型。之前的蒸馏是需要用到分数模型的，但是其实我们可以近似估计分数对数似然梯度如下：
+
+$$\nabla \log p_t(x_t) = -\mathbb{E}\left[ \frac{\dot{x}_t}{t^2} \middle| x_t \right]$$
+
+这种无偏估计无需预训练模型。损失函数我们称作consistency training loss：
+
+$$
+\mathbb{E}[\lambda(t_n)d(f_{\theta}(x + t_{n+1}z, t_{n+1}), f_{\theta^{-}}(x + t_nz, t_n))]
+$$
