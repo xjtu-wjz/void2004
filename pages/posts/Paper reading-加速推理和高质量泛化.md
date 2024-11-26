@@ -1,7 +1,7 @@
 ---
 title: Paper reading--扩散模型推理加速与高质量生成
-date: 2024-11-13
-updated: 2023-11-13
+date: 2024-11-25
+updated: 2023-11-25
 categories: Paper-reading
 image: https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2024-11-12%20111031.webp
 tags:
