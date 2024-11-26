@@ -1,5 +1,5 @@
 ---
-title: Paper reading--扩散模型推理加速与高质量生成
+title: Paper reading--扩散模型推理与采样加速
 date: 2024-11-25
 updated: 2023-11-25
 categories: Paper-reading
