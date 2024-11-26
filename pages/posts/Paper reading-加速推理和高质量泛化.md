@@ -176,3 +176,13 @@ $$\nabla \log p_t(x_t) = -\mathbb{E}\left[ \frac{\dot{x}_t}{t^2} \middle| x_t \r
 $$
 \mathbb{E}[\lambda(t_n)d(f_{\theta}(x + t_{n+1}z, t_{n+1}), f_{\theta^{-}}(x + t_nz, t_n))]
 $$
+
+
+# Phased Consistency Model
+尽管CM取得了比较好的成绩，但是依然存在这几个问题：
+
+- 一致性：由于CM,LCM等有一致性要求（ODE轨迹上任何点输出相同），因此必须采用纯随机多步采样算法。这个算法假设各个采样步骤的噪声是随机的，也就因而在生成过程中引入随机性。LCM和其他CM无法在推理步数较少或者较多的时候依然保持生成的一致性。
+
+- 可控性：例如LCM只能接受1~2步的classifier free guidance，再大的CFG会导致曝光问题（当CFG过高，生成图像出现明显过亮与细节丢失的现象）。同时LCM也对负向prompt不敏感。导致这些现象的原因是使用的LCM增强ODE求解器降低了模型对外部信号（CFG,负向prompt）的响应能力。
+
+- 效率：在步数很少的时候，LCM生成的图片会出现明显的细粒度细节丢失。作者认为这是因为LCM过程中使用的传统L2损失或Huber损失不足以在低步数设置下提供细粒度的监督。
