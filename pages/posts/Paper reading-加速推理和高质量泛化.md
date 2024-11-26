@@ -59,3 +59,36 @@ $$\hat{T} = \frac{1}{M} \sum_{m=1}^{M} \|s(x_m)\|^2, \quad 其中 \; x_m \sim q(
 $$\hat{\sigma}_n^2 = \lambda_n^2 + \left( \sqrt{\frac{\beta_n}{\alpha_n}} - \sqrt{\beta_{n-1}} - \lambda_n^2 \right)^2 \left( 1 - \bar{\beta}_n \Gamma_n \right)$$
 
 针对每一个预训练分数模型和下游任务，蒙特卡洛采样只需要进行一次即可。
+
+经过使用蒙特卡洛采样之后，我们得到预测方差和系统方差之间的差值为：
+
+$$
+|\sigma_n^{*2} - \hat{\sigma}_n^2| = 
+\underbrace{
+\left(
+\sqrt{\frac{\beta_n}{\alpha_n}} - \sqrt{\beta_{n-1}} - \lambda_n^2
+\right)^2}_{\text{Coefficient}}
+\underbrace{
+\overline{\beta_n}
+\left|
+\Gamma_n - \mathbb{E}_{q_n(x_n)} \frac{||\nabla x_n \log q_n(x_n)||^2}{d}
+\right|
+}_{\text{Approximation error}}.
+$$
+
+我们还可以得到最优反向方差的上下界：
+
+$$
+\lambda_n^2 \leq \sigma_n^2 \leq \lambda_n^2 + \left( \sqrt{\frac{\beta_n}{\alpha_n}} - \sqrt{\beta_{n-1} - \lambda_n^2} \right)^2 .
+$$
+
+这段为原本方差加上我们给的参数限制。如果数据分布有界，则还可以推出这样的上界：
+
+$$
+\sigma_n^2 \leq \lambda_n^2 + \left( \sqrt{\alpha_{n-1}} - \sqrt{\beta_{n-1} - \lambda_n^2} \cdot \sqrt{\frac{\alpha_n}{\beta_n}} \right)^2 \left( \frac{b-a}{2} \right)^2 .
+$$
+
+假设数据分布$q(x_0)$有界，在$[a,b]^d$区域内。
+
+针对具体下游任务的数据分布情况，选择较小的上界来约束。
+
