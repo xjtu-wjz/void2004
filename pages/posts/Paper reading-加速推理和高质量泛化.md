@@ -36,3 +36,26 @@ $$\Delta\rho = \frac{(\rho_{top} - \rho_{bottom})}{k}, \quad \rho_i = \rho_{bott
 示意图如下：
 
 ![alt text](../../materials/DC1.png)
+
+
+# ANALYTIC-DPM-- AN ANALYTIC ESTIMATE OF THE OPTIMAL REVERSE VARIANCE IN DIFFUSION PROBABILISTIC MODELS
+
+扩散模型高昂的计算成本主要来自于逆扩散中的方差估计，这一步需要迭代上千个时间周期。本论文提出了反向扩散中的方差和KL散度都有关于其得分函数的解析形式。在此基础上论文提出一种免预训练的框架--解析DPM，使用蒙特卡洛方法和已经经过预训练的基于得分的模型来估计方差和KL散度的解析形式。
+
+首先提出了最优均值和方差的解析值如下：
+
+$$\mu_n^*(x_n) = \tilde{\mu}_n ( x_n, \frac{1}{\sqrt{\alpha_n}} (x_n + \bar{\beta}_n \nabla_{x_n} \log q_n(x_n)))$$
+
+$$\sigma_n^{*2} = \lambda_n^2 + ( \sqrt{\frac{\bar{\beta}_n}{\alpha_n}} - \sqrt{\bar{\beta}_{n-1}} - \lambda_n^2 )^2 ( 1 - \bar{\beta}_n \mathbb{E}_{q_n(\boldsymbol{x}_n)} \frac{|| \nabla_{\boldsymbol{x}_n} \log q_n(\boldsymbol{x}_n) ||^2}{d} )$$
+
+使用分数函数和参数$\alpha，\beta$给出解析形式。方差使用基础方差$\lambda^2$和分数函数平方范数的期望与$\alpha和\beta$加以限制。
+
+分数函数$\nabla_{x} logq(x)$指示数据分布的对数似然对数据本身的梯度，通常也可以用一个分数模型$s(x)$来学习，表示。分数函数指导去噪过程中的方向。在实际中分数函数的期望均方范数可以用蒙特卡洛采样来代替：
+
+$$\hat{T} = \frac{1}{M} \sum_{m=1}^{M} \|s(x_m)\|^2, \quad 其中 \; x_m \sim q(x)$$
+
+回带得到：
+
+$$\hat{\sigma}_n^2 = \lambda_n^2 + \left( \sqrt{\frac{\beta_n}{\alpha_n}} - \sqrt{\beta_{n-1}} - \lambda_n^2 \right)^2 \left( 1 - \bar{\beta}_n \Gamma_n \right)$$
+
+针对每一个预训练分数模型和下游任务，蒙特卡洛采样只需要进行一次即可。
