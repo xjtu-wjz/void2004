@@ -230,3 +230,12 @@ $$\hat{\mathbf{x}}_{t_n}^\phi = \Phi(x_{t_{n+k}}, t_{n+k}, t_n; \phi)$$
 
 $$\mathcal{L}_{PCM}(\theta, \theta^-; \phi) = \mathbb{E}_{\mathbb{P}(m), \mathbb{P}(n|m), \mathbb{P}(\mathbf{x}_{t_{n+1}}|n,m)} \left[ \lambda(t_n) d \left( f_\theta^m(\mathbf{x}_{t_{n+1}}, t_{n+1}), f_{\theta^-}^m(\hat{\mathbf{x}}_{t_n}^\phi, t_n) \right) \right]$$
 
+在通常的扩散模型中，为了考虑负prompt和引入CFG，通常采用这种线性加权混合输出：
+
+$$\epsilon_{\phi}(\mathbf{x}, t, c, c_{neg}; w) = \epsilon_{\phi}(\mathbf{x}, t, c_{neg}) + w(\epsilon_{\phi}(\mathbf{x}, t, c) - \epsilon_{\phi}(\mathbf{x}, t, c_{neg}))$$
+
+ 混合输出扩散模型在训练过程中会随机用空取代文本输入c，这会稀释负prompt的监督信息，也就解释了为什么CM对负prompt不敏感。同时离开CFG的模型输出效果也非常不好，因为没有CFG约束的ODE轨迹会偏离原本的轨迹。
+
+但在PCM中则不然。因为PCM的轨迹和普通CM不同，大的ODE轨迹被分解为多个小轨迹，而且每个轨迹的起始点$s_{m+1}$是通过对真实样本点加噪获得的，与真实数据分布差距较小。换句话说，及时轨迹和真实数据分布差距比较大，向其中注入噪声也缓解了差距。
+
+为了提升输出质量，继续加入GAN风格的对抗损失。
