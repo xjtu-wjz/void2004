@@ -186,3 +186,47 @@ $$
 - 可控性：例如LCM只能接受1~2步的classifier free guidance，再大的CFG会导致曝光问题（当CFG过高，生成图像出现明显过亮与细节丢失的现象）。同时LCM也对负向prompt不敏感。导致这些现象的原因是使用的LCM增强ODE求解器降低了模型对外部信号（CFG,负向prompt）的响应能力。
 
 - 效率：在步数很少的时候，LCM生成的图片会出现明显的细粒度细节丢失。作者认为这是因为LCM过程中使用的传统L2损失或Huber损失不足以在低步数设置下提供细粒度的监督。
+
+本篇文章提出了phased consistency model的方法来矫正一致性模型存在的这几个问题。
+
+首先看定义。PCM将CM中的单个ODE轨迹拆分成若干个子轨迹：
+
+$$\left\{ \mathbf{x}_t \right\}_{t \in [s_m, s_{m+1}]}, t=\{0,1,......,M-1\}$$
+
+将每一个子轨迹作为单独的一致性模型进行训练，即要求是：
+
+$$f^m(\mathbf{x}_t, t) = f^m(\mathbf{x}_{t'}, t')，其中x_{t},x_{t'}\in [s_m,s_{m+1}]$$
+
+为了保证总体轨迹之间的统一性，我们还需要在各个子轨迹之间定义平滑的转换：
+
+$$f^{m,m'} = f^{m'} (\cdots f^{m-2} (f^{m-1} (f^m (\mathbf{x}_t, t), s_m), s_{m-1}) \cdots , s_{m'})$$
+
+现在来参数化所需要学习的映射函数$f_{\theta}(x,t)$。老规矩，为了满足边界条件和一致性要求，先看原本的CM中的映射函数：
+
+$$f^m_\theta(x, t) = c_m^{\text{skip}}(t)x + c_m^{\text{mut}}(t)F_\theta(x, t, s_m)$$
+
+那么现在想办法如何参数化这个$F_{\theta}(x,t,s_m)$.我们借鉴先前提出的从时间节点t至s的数据映射关系：
+
+$$\mathbf{x}_s = \frac{\alpha_s}{\alpha_t} \mathbf{x}_t + \alpha_s \int_{\lambda_t}^{\lambda_s} e^{-\lambda} \sigma_{t_{\lambda}(\lambda)} \nabla \log \mathbb{P}_{t_{\lambda}(\lambda)} (\mathbf{x}_{t_{\lambda}(\lambda)}) d\lambda$$
+
+其中：
+$$
+\lambda_t = \ln \left( \frac{\alpha_t}{\sigma_t} \right)
+$$
+
+我们可以看见获得$x_s$为对$x_t$进行了放缩变换和积分运算。其中的分数函数梯度我们选择依然使用$\epsilon$模型拟合，于是形式改写为：
+
+$$
+\mathbf{x}_s = \frac{\alpha_s}{\alpha_t} \mathbf{x}_t - \alpha_s \hat{\epsilon}_\theta(\mathbf{x}_t, t) \int_{\lambda_t}^{\lambda_s} e^{-\lambda} d\lambda .
+$$
+
+边界条件已经满足，简化定义$f_{\theta}^m(x,t)$等于$F_{\theta}(x,t,s_m)$.
+
+训练过程中，根据上面的定义我们知道PCM的ODE轨迹被分为很多个小的子轨迹。类似于CM中的采样，我们定义PCM中生成样本对的方法：
+
+$$\hat{\mathbf{x}}_{t_n}^\phi = \Phi(x_{t_{n+k}}, t_{n+k}, t_n; \phi)$$
+
+训练中统一采用k=1即一步出结果，减少算力消耗。那么蒸馏训练过程可以被表示为如下形式：
+
+$$\mathcal{L}_{PCM}(\theta, \theta^-; \phi) = \mathbb{E}_{\mathbb{P}(m), \mathbb{P}(n|m), \mathbb{P}(\mathbf{x}_{t_{n+1}}|n,m)} \left[ \lambda(t_n) d \left( f_\theta^m(\mathbf{x}_{t_{n+1}}, t_{n+1}), f_{\theta^-}^m(\hat{\mathbf{x}}_{t_n}^\phi, t_n) \right) \right]$$
+
