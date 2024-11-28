@@ -68,7 +68,7 @@ export default defineConfig<ThemeConfig>({
       },
       {
         text: 'CV',
-        link: 'https://xjtu-wjz.github.io/',
+        link: 'https://github.com/xjtu-wjz/xjtu-wjz.github.io/blob/master/my_cv_of_English_version.pdf',
         icon: 'i-ri-sd-card-mini-fill',
       },
       {
