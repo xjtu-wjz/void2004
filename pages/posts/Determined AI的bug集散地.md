@@ -19,7 +19,7 @@ top: 1
 
 没有接触过docker可以先去[docker的官方文档](https://docs.docker.com/)看看。一句话概括，docker就是将你的代码和运行环境打包在一起，这样你就可以在任何地方运行你的代码了。像虚拟机，但是不像虚拟机一样还打包一个操作系统，所以非常轻量。显然地，本来使用conda管理环境的话，我们要用conda来下载各种包，现在我们就将对各种包的需求写在叫做**Dockerfile**的文件里,然后由docker按照这个文件去下载对应的包，为我们搭建好环境。这个环境叫做**container**,container没有运行的时候叫做**image**。
 
-提供一个dockerfile的模板：
+提供一个我的简单手搓dockerfile的模板：
 ```
 # Determined AI's base image
 FROM harbor.lins.lab/determinedai/environments:cuda-11.8-pytorch-2.0-gpu-mpi-0.31.1
@@ -46,6 +46,76 @@ RUN eval "$(conda shell.bash hook)" && \
     conda activate base && \
     pip config set global.index-url https://mirrors.bfsu.edu.cn/pypi/web/simple &&\
     pip install --requirement /tmp/pip_requirements.txt
+```
+和一个使用nvidia的mini template:
+
+```
+#! ----EDIT HERE TO CHANGE BASE IMAGE----
+FROM nvcr.io/nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
+# COMMENT ABOVE & UNCOMMENT BELOW TO USE BASE IMAGE WITH PYTORCH:
+# FROM nvcr.io/nvidia/pytorch:22.12-py3
+
+# Environment variables
+ARG PYTHON_VERSION=3.8.12
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Shanghai LANG=C.UTF-8 LC_ALL=C.UTF-8 PIP_NO_CACHE_DIR=1
+
+# Install apt packages
+RUN sed -i "s/archive.ubuntu.com/mirrors.ustc.edu.cn/g" /etc/apt/sources.list &&\
+    sed -i "s/security.ubuntu.com/mirrors.ustc.edu.cn/g" /etc/apt/sources.list &&\
+    rm -f /etc/apt/sources.list.d/* &&\
+    apt-get update && apt-get upgrade -y &&\
+    apt-get install -y --no-install-recommends \
+        # Determined requirements and common tools
+        autoconf automake autotools-dev build-essential ca-certificates \
+        make cmake ninja-build pkg-config g++ ccache yasm \
+        ccache doxygen graphviz plantuml \
+        daemontools krb5-user ibverbs-providers libibverbs1 \
+        libkrb5-dev librdmacm1 libssl-dev libtool \
+        libnuma1 libnuma-dev libpmi2-0-dev \
+        openssh-server openssh-client pkg-config nfs-common \
+        ## Tools
+        git curl wget unzip nano net-tools sudo htop iotop \
+        cloc rsync xz-utils software-properties-common \
+    && rm /etc/ssh/ssh_host_ecdsa_key \
+    && rm /etc/ssh/ssh_host_ed25519_key \
+    && rm /etc/ssh/ssh_host_rsa_key \
+    && cp /etc/ssh/sshd_config /etc/ssh/sshd_config_bak \
+    && sed -i "s/^.*X11Forwarding.*$/X11Forwarding yes/" /etc/ssh/sshd_config \
+    && sed -i "s/^.*X11UseLocalhost.*$/X11UseLocalhost no/" /etc/ssh/sshd_config \
+    && grep "^X11UseLocalhost" /etc/ssh/sshd_config || echo "X11UseLocalhost no" >> /etc/ssh/sshd_config \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Conda and Determined AI stuff
+#! ---EDIT notebook-requirements.txt TO ADD PYPI PACKAGES----
+WORKDIR /tmp
+ENV PATH="/opt/conda/bin:${PATH}"
+ENV PYTHONUNBUFFERED=1 PYTHONFAULTHANDLER=1 PYTHONHASHSEED=0
+ENV JUPYTER_CONFIG_DIR=/run/determined/jupyter/config
+ENV JUPYTER_DATA_DIR=/run/determined/jupyter/data
+ENV JUPYTER_RUNTIME_DIR=/run/determined/jupyter/runtime
+RUN git clone https://github.com/LingzheZhao/determinedai-container-scripts &&\
+    cd determinedai-container-scripts &&\
+    git checkout v0.2.2 &&\
+    ./install_python.sh ${PYTHON_VERSION} &&\
+    cp .condarc /opt/conda/.condarc &&\
+    pip config set global.index-url https://mirrors.bfsu.edu.cn/pypi/web/simple &&\
+    pip install determined && pip uninstall -y determined &&\
+    pip install -r notebook-requirements.txt &&\
+    pip install -r additional-requirements.txt &&\
+    jupyter labextension disable "@jupyterlab/apputils-extension:announcements" &&\
+    ./add_det_nobody_user.sh &&\
+    ./install_libnss_determined.sh &&\
+    rm -rf /tmp/*
+
+#! ----EDIT HERE TO INSTALL CONDA PACKAGES----
+# Example: PyTorch w/ cuda 11.6
+# RUN conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge
+# Example: Jax
+# RUN conda install -c conda-forge jax
+# Example: OpenCV
+# RUN conda install -c conda-forge opencv
 ```
 
 如果我们下载的项目中有一个对应的requirements.txt/setup.py等诸如此类的文件，就将他们填到这份dockerfile的对应位置中。
