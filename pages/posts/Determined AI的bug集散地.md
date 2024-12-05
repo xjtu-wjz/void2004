@@ -4,7 +4,7 @@ date: 2024-12-04
 updated: 2024-12-04
 excerpt: 使用集群管理工具Determined-AI的quick start
 categories: Tech
-image: https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2024-11-20%20165837.webp
+image: https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/Pasted%20image%2020241205090412.webp
 tags:
   - 科研
   - Tech
