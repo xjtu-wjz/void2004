@@ -1,5 +1,5 @@
 ---
-title: Paper reading--Scalable Diffusion Models with Transformers
+title: 使用Determined-AI 的bug集散地
 date: 2024-12-04
 updated: 2024-12-04
 excerpt: 使用集群管理工具Determined-AI的quick start
