@@ -176,3 +176,63 @@ environment:
 ```
 
 就可以创建一个container运行代码了。当然注意yaml文件之类的名称要根据自己的情况改变。
+
+# 比较模板的样式
+
+上面提供的方案是我比较喜欢的一种，但是如果你还是希望少折腾，用一张已定义程度比较高的板子的话，也可以参考这一套。
+
+首先在项目文件夹，和例如setup.py/yaml/requirement.txt文件同一目录下创建一个image_builder.sh：
+
+```
+SOURCE_IMAGE_NAME="public_vision:v1.2"
+# Name of the source Docker image that will be used as the base image.
+
+TARGET_IMAGE_NAME="public_vision:v1.3"
+# Name of the target Docker image that will be created after applying changes.
+
+INSTALL_PACKAGES="seaborn numpy"
+# List of Python packages to be installed using pip.
+
+UPGRADE_PACKAGES="lightly pandas"
+# List of Python packages to be upgraded to their latest versions.
+
+# Create a temporary file in the system's temporary directory.
+TEMP_FILE=$(mktemp /tmp/temp_Dockerfile.XXXXXX.txt)
+
+# Populate the temporary Dockerfile with the base image and package installation commands.
+cat > "$TEMP_FILE" << EOF
+FROM harbor.lins.lab/library/$SOURCE_IMAGE_NAME
+
+RUN pip install $INSTALL_PACKAGES
+# Install the specified packages using pip.
+
+RUN pip install --upgrade $UPGRADE_PACKAGES
+# Upgrade the specified packages to their latest versions using pip.
+EOF
+
+# Build a new Docker image with the specified tag, disabling BuildKit and using specific proxy settings.
+DOCKER_BUILDKIT=0 docker build -t $TARGET_IMAGE_NAME -f $TEMP_FILE --build-arg http_proxy=http://192.168.123.169:18889 --build-arg https_proxy=http://192.168.123.169:18889 .
+
+# Tag the newly built Docker image with the target name in the specified Docker registry.
+docker tag $TARGET_IMAGE_NAME harbor.lins.lab/library/$TARGET_IMAGE_NAME
+
+# Push the tagged Docker image to the specified Docker registry.
+docker push harbor.lins.lab/library/$TARGET_IMAGE_NAME
+
+```
+
+将内容填写其中。名字和需求都可以自己自定义。接着bash这个脚本，你就能在docker hubs中看见这张创建出来的image。
+
+接着我们需要上传到实验室的hub。在det登录一次之后就不需要再登陆了，使用：
+
+```
+det tag <your_image> harbor.lins.lab/library/<your_image>
+```
+
+为image打上规范的实验室tag，然后
+
+```
+docker push harbor.lins.lab/library/your_image:vX.X
+```
+
+就可以将image送入hub中。之后直接在创建环境脚本中替换image名称即可。
