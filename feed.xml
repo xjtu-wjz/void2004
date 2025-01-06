@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>void’s blog</title>
+        <link>http://www.void2024.top/</link>
+        <description>你好，我是void,欢迎</description>
+        <lastBuildDate>Mon, 06 Jan 2025 17:24:24 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>void’s blog</title>
+            <url>https://avatars.githubusercontent.com/u/123150988?s=400&amp;u=61225ea1289724b1fbeaea0089ebb453d7ab07f9&amp;v=4</url>
+            <link>http://www.void2024.top/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2025 © void</copyright>
+        <atom:link href="http://www.void2024.top/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[2024的简单小结]]></title>
+            <link>http://www.void2024.top/posts/2024--小结</link>
+            <guid>http://www.void2024.top/posts/2024--小结</guid>
+            <pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>不知不觉间2024结束了，这一年确实经历了很多很多事，本来想说的有千言万语，但真正涌到嘴边的却寥寥无几，最大的感触也许就是--过去的生活多少有些狭隘了，狭隘的生活不会提供有趣的阅历，也不会帮助我在科</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/2024--小结" target="_blank">http://www.void2024.top/posts/2024--小结</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2025-01-03%20215352.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[周记 week13~16 (12.02~1.05)]]></title>
+            <link>http://www.void2024.top/posts/周记 week13~16(12.2~1.5)</link>
+            <guid>http://www.void2024.top/posts/周记 week13~16(12.2~1.5)</guid>
+            <pubDate>Sun, 05 Jan 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>很久没有更周记了，12月到12月中旬停止的原因是因为刚刚拿到集群了，中间的适应过程还是折磨了一会，用熟了之后必须感叹一下这种数据和代码分开管理，环境独立维护的集群服务对于很吃算力资源的方向真的非常有</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/周记 week13~16(12.2~1.5)" target="_blank">http://www.void2024.top/posts/周记 week13~16(12.2~1.5)</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2025-01-03%20215640.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[使用Determined-AI 的bug集散地]]></title>
+            <link>http://www.void2024.top/posts/Determined AI的bug集散地</link>
+            <guid>http://www.void2024.top/posts/Determined AI的bug集散地</guid>
+            <pubDate>Wed, 04 Dec 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>组里使用Determined AI管理集群，比原来使用conda管理环境麻烦超级多，但是也规范很多。尽管学长们写了很多文档了，但对于一个新上手的小白来说要想快速学会如何创建环境然后跑自己的代码还是非</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/Determined AI的bug集散地" target="_blank">http://www.void2024.top/posts/Determined AI的bug集散地</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/Pasted%20image%2020241205090412.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[ICML 2025投稿日记]]></title>
+            <link>http://www.void2024.top/posts/ICML 2025投稿日记</link>
+            <guid>http://www.void2024.top/posts/ICML 2025投稿日记</guid>
+            <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>11.11 确定方向</h1>
+<p>特殊的日子，铝坨坨wave75 到了，同时也确定了具体做做加速推理以及高质量生成方向的工作，标杆是DDIM的论文，希望能提出像他们一样简单而优雅的方法。</p>
+<h1>11.27</h1>
+<br/><p>访问 <a href="http://www.void2024.top/posts/ICML 2025投稿日记" target="_blank">http://www.void2024.top/posts/ICML 2025投稿日记</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2024-11-03%20103127.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--classifier guidance and classifier-free guidance]]></title>
+            <link>http://www.void2024.top/posts/Diffusion Models Beat GANs on Image Synthesis</link>
+            <guid>http://www.void2024.top/posts/Diffusion Models Beat GANs on Image Synthesis</guid>
+            <pubDate>Sun, 10 Nov 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>两种改进diffusion model的方法，思路相反，分别利用和去除classifier guidance.首先我们看带有分类器指引的，再看不带分类器指引的。</p>
+<p>尽管最近的diffusion mod</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/Diffusion Models Beat GANs on Image Synthesis" target="_blank">http://www.void2024.top/posts/Diffusion Models Beat GANs on Image Synthesis</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2024-11-07%20175038.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--《Learning Transferable Visual Models From Natural Language Supervision》]]></title>
+            <link>http://www.void2024.top/posts/Learning Transferable Visual Models From Natural Language Supervision</link>
+            <guid>http://www.void2024.top/posts/Learning Transferable Visual Models From Natural Language Supervision</guid>
+            <pubDate>Sun, 10 Nov 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>一句话概括，clip介绍了一种将自然语言监督引入计算机视觉领域的方法（或者说，一类新的encoder）。为后面包括LDM等工作使用自然语言作为约束引入图像生成提供了启发。</p>
+<h1>Abstract &amp;</h1>
+<br/><p>访问 <a href="http://www.void2024.top/posts/Learning Transferable Visual Models From Natural Language Supervision" target="_blank">http://www.void2024.top/posts/Learning Transferable Visual Models From Natural Language Supervision</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2024-11-07%20175014.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[深度学习基础概念]]></title>
+            <link>http://www.void2024.top/posts/深度学习-basic concept</link>
+            <guid>http://www.void2024.top/posts/深度学习-basic concept</guid>
+            <pubDate>Sun, 10 Nov 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>近几年深度学习领域的基础概念和模型基础。</p>
+<h1>残差连接</h1>
+<p>在传统神经网络中，信息会从一个层传递到下一个层，在传递的过程中会损失部分信息。在残差连接技术中，在原本layer的输出基础上又加了一个跨层的</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/深度学习-basic concept" target="_blank">http://www.void2024.top/posts/深度学习-basic concept</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/deep-learning_basic.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--《High-Resolution Image Synthesis with Latent Diffusion Models》]]></title>
+            <link>http://www.void2024.top/posts/High-Resolution Image Synthesis with Latent Diffusion Models</link>
+            <guid>http://www.void2024.top/posts/High-Resolution Image Synthesis with Latent Diffusion Models</guid>
+            <pubDate>Fri, 08 Nov 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Stable Diffusion 是当前最受欢迎的Image generative model，主要原因就是SD model极大提升了diffusion model生成图像的效率，令用户可以在自己的</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/High-Resolution Image Synthesis with Latent Diffusion Models" target="_blank">http://www.void2024.top/posts/High-Resolution Image Synthesis with Latent Diffusion Models</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2024-11-08%20142919.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--《Denoising Diffusion Implicit Models》]]></title>
+            <link>http://www.void2024.top/posts/DENOISING DIFFUSION IMPLICIT MODELS</link>
+            <guid>http://www.void2024.top/posts/DENOISING DIFFUSION IMPLICIT MODELS</guid>
+            <pubDate>Mon, 04 Nov 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<br/><p>访问 <a href="http://www.void2024.top/posts/DENOISING DIFFUSION IMPLICIT MODELS" target="_blank">http://www.void2024.top/posts/DENOISING DIFFUSION IMPLICIT MODELS</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/DENOISING%20DIFFUSION%20IMPLICIT%20MODELS.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--《Denoising Diffusion Probabilistic Models》]]></title>
+            <link>http://www.void2024.top/posts/Denoising Diffusion Probabilistic Models</link>
+            <guid>http://www.void2024.top/posts/Denoising Diffusion Probabilistic Models</guid>
+            <pubDate>Sun, 03 Nov 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>扩散模型的开山之作<a href="https://arxiv.org/abs/2006.11239">Denoising Diffusion Probabilistic Models</a>。这篇帖子并不把重心放在详细</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/Denoising Diffusion Probabilistic Models" target="_blank">http://www.void2024.top/posts/Denoising Diffusion Probabilistic Models</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/ASurvey%20on%20Multimodal%20Large%20Language%20Models.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[歌声と夏--蝉鸣中的旋律]]></title>
+            <link>http://www.void2024.top/posts/神秘记录</link>
+            <guid>http://www.void2024.top/posts/神秘记录</guid>
+            <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>对日语歌一直有着特殊的偏好，从俳句开始就比较中意日语效率低但是句式偏工整的表达习惯，和隐藏于每一个助词，每一个语气词的中二感。</p>
+<p>最喜欢的几首旋律差别不小，但是普遍都是以summer(盛夏)或者ch</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/神秘记录" target="_blank">http://www.void2024.top/posts/神秘记录</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/paper-reading-new.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--<<Instruct, Not Assist LLM-based Multi-Turn Planning and Hierarchical Questioning for Socratic Code Debugging>>]]></title>
+            <link>http://www.void2024.top/posts/Instruct, Not Assist-  LLM-based Multi-Turn Planning and Hierarchical Questioning  for Socratic Code Debugging</link>
+            <guid>http://www.void2024.top/posts/Instruct, Not Assist-  LLM-based Multi-Turn Planning and Hierarchical Questioning  for Socratic Code Debugging</guid>
+            <pubDate>Mon, 28 Oct 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>苏格拉底多轮教学引导</h1>
+<p>现有LLMs习惯于直接针对提出的问题给出答案，但这并不是一种优秀的教学方式。因此本文提出将苏格拉底式引导用于大模型教学，特殊地，处理引导学生对出错代码进行debug。</p>
+<h1></h1>
+<br/><p>访问 <a href="http://www.void2024.top/posts/Instruct, Not Assist-  LLM-based Multi-Turn Planning and Hierarchical Questioning  for Socratic Code Debugging" target="_blank">http://www.void2024.top/posts/Instruct, Not Assist-  LLM-based Multi-Turn Planning and Hierarchical Questioning  for Socratic Code Debugging</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/paper-reading-llm.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--《EduChat-A Large-Scale Language Model-based Chatbot System for Intelligent Education》]]></title>
+            <link>http://www.void2024.top/posts/EduChat _A Large Scale Language Model based Chatbot System  for Intelligent Education</link>
+            <guid>http://www.void2024.top/posts/EduChat _A Large Scale Language Model based Chatbot System  for Intelligent Education</guid>
+            <pubDate>Sun, 27 Oct 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>华东师范大学提出的一款面向基础教育的苏格拉底式大模型。</p>
+<h1>教育大模型面对的问题</h1>
+<p>在多类领域LLMs已经取得了瞩目的成就，但是在教育领域LLM的表现依然欠佳，主要有如下原因：</p>
+<ul>
+<li>大模型基于基础数据</li>
+</ul>
+<br/><p>访问 <a href="http://www.void2024.top/posts/EduChat _A Large Scale Language Model based Chatbot System  for Intelligent Education" target="_blank">http://www.void2024.top/posts/EduChat _A Large Scale Language Model based Chatbot System  for Intelligent Education</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/educhat.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[ECML-PKDD 2025投稿日记]]></title>
+            <link>http://www.void2024.top/posts/ECML-PKDD 2025投稿日记</link>
+            <guid>http://www.void2024.top/posts/ECML-PKDD 2025投稿日记</guid>
+            <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Preliminary</h1>
+<p>此帖用于记录赶稿ECML-PKDD2025的具体工作细节和心路历程。如果中了，希望能给后面投稿的学弟学妹一些启示与参考；如果没有的话（好像大概率中不了hhh）也无所谓，发</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/ECML-PKDD 2025投稿日记" target="_blank">http://www.void2024.top/posts/ECML-PKDD 2025投稿日记</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/shark.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[WWW 2025投稿日记]]></title>
+            <link>http://www.void2024.top/posts/WWW 2025投稿日记</link>
+            <guid>http://www.void2024.top/posts/WWW 2025投稿日记</guid>
+            <pubDate>Sat, 12 Oct 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<br/><p>访问 <a href="http://www.void2024.top/posts/WWW 2025投稿日记" target="_blank">http://www.void2024.top/posts/WWW 2025投稿日记</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2024-11-03%20103127.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[班会感想（补档）]]></title>
+            <link>http://www.void2024.top/posts/班会感想（补档）</link>
+            <guid>http://www.void2024.top/posts/班会感想（补档）</guid>
+            <pubDate>Wed, 25 Sep 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>这篇长文其实是前几天班会开完之后的写的，当时直接发在空间里，还是引起了不少同学的共鸣。现在把他搬过来。</p>
+<p>原文：</p>
+<p>吐槽/谈本科生进组科研/谈大三上进组<br>
+（全文很长，而且有些话不吐不快，攻击性会非常</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/班会感想（补档）" target="_blank">http://www.void2024.top/posts/班会感想（补档）</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-09-17%20175054.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--《Self-PU Self Boosted and Calibrated Positive-Unlabeled Training》]]></title>
+            <link>http://www.void2024.top/posts/Self-PU_Self Boosted and Calibrated Positive-Unlabeled Training</link>
+            <guid>http://www.void2024.top/posts/Self-PU_Self Boosted and Calibrated Positive-Unlabeled Training</guid>
+            <pubDate>Mon, 09 Sep 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>self-PU</h1>
+<p>文章提出了一种新颖的PUL问题框架。先前的PUL方法集中精力于损失敏感上面，直接将未标记样本作为负样本进行损失优化，然后对于未标记样本中各个样本赋予不同权重进行学习。问题也很明显</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/Self-PU_Self Boosted and Calibrated Positive-Unlabeled Training" target="_blank">http://www.void2024.top/posts/Self-PU_Self Boosted and Calibrated Positive-Unlabeled Training</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/frena.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--《OOD-intro》]]></title>
+            <link>http://www.void2024.top/posts/OOD-intro</link>
+            <guid>http://www.void2024.top/posts/OOD-intro</guid>
+            <pubDate>Sat, 07 Sep 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>OOD简介</h1>
+<p>OOD（out of distribution detection）是异常检测（Anomaly Detection）领域的一个重要分支，通俗来讲OOD检测的任务就是**识别出分布与模型</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/OOD-intro" target="_blank">http://www.void2024.top/posts/OOD-intro</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/121043535_p0.1aoxfetb9a.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--Scalable Diffusion Models with Transformers]]></title>
+            <link>http://www.void2024.top/posts/Scalable Diffusion Models with Transformers</link>
+            <guid>http://www.void2024.top/posts/Scalable Diffusion Models with Transformers</guid>
+            <pubDate>Fri, 01 Dec 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>文章提出了经典的diffusion transformer。Dit的核心思想是使用transformer代替原本在扩散模型中负责预测噪声的U-net。使用transformer之后的扩散模型可以有效</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/Scalable Diffusion Models with Transformers" target="_blank">http://www.void2024.top/posts/Scalable Diffusion Models with Transformers</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2024-11-20%20165837.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--生成模型训练加速]]></title>
+            <link>http://www.void2024.top/posts/生成模型训练加速</link>
+            <guid>http://www.void2024.top/posts/生成模型训练加速</guid>
+            <pubDate>Tue, 28 Nov 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>REPRESENTATION ALIGNMENT FOR GENERATION: TRAINING DIFFUSION TRANSFORMERS IS EASIER THAN YOU THIN</h1>
+<br/><p>访问 <a href="http://www.void2024.top/posts/生成模型训练加速" target="_blank">http://www.void2024.top/posts/生成模型训练加速</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2024-11-24%20211237.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--扩散模型推理与采样加速]]></title>
+            <link>http://www.void2024.top/posts/Paper reading-加速推理和高质量泛化</link>
+            <guid>http://www.void2024.top/posts/Paper reading-加速推理和高质量泛化</guid>
+            <pubDate>Sat, 25 Nov 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>The Surprising Effectiveness of Skip-Tuning in Diffusion Sampling</h1>
+<p>正式开始之前首先我们需要先学习目前有很多ODE-based 扩</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/Paper reading-加速推理和高质量泛化" target="_blank">http://www.void2024.top/posts/Paper reading-加速推理和高质量泛化</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2024-11-12%20111031.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--《Efficiency for Free--Ideal Data Are Transportable Representations》]]></title>
+            <link>http://www.void2024.top/posts/Efficiency for Free--Ideal Data Are  Transportable Representations</link>
+            <guid>http://www.void2024.top/posts/Efficiency for Free--Ideal Data Are  Transportable Representations</guid>
+            <pubDate>Mon, 06 Nov 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>文章提出，使用一个公开的，并不针对数据集或者特定的下流任务进行特化的模型已经可以产生高质量的训练数据，并且这些数据可以有效帮助加速模型训练过程和提升训练性能。基于这个发现，提出了Representa</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/Efficiency for Free--Ideal Data Are  Transportable Representations" target="_blank">http://www.void2024.top/posts/Efficiency for Free--Ideal Data Are  Transportable Representations</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/100468452_p0.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--《Attention is all you need》]]></title>
+            <link>http://www.void2024.top/posts/attention is all you need</link>
+            <guid>http://www.void2024.top/posts/attention is all you need</guid>
+            <pubDate>Thu, 02 Nov 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>大模型的根基--大名鼎鼎的transformer降世的论文。原文链接：<a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a>。</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/attention is all you need" target="_blank">http://www.void2024.top/posts/attention is all you need</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/attention%20is%20all%20you%20need.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--《Energy-based Out-of-distribution Detection》]]></title>
+            <link>http://www.void2024.top/posts/Energy-based Out-of-distribution Detection</link>
+            <guid>http://www.void2024.top/posts/Energy-based Out-of-distribution Detection</guid>
+            <pubDate>Tue, 10 Oct 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>能量分数概述</h1>
+<p>首先什么是能量分数方法介绍：</p>
+<p>一个模型区分OOD和ID数据的主要依据是它们的能量分数，这个就是energy-based方法。</p>
+<p>大致流程是这样：</p>
+<p>![alt text](..</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/Energy-based Out-of-distribution Detection" target="_blank">http://www.void2024.top/posts/Energy-based Out-of-distribution Detection</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/liuhua.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[周记 week12 (11.25~12.01)]]></title>
+            <link>http://www.void2024.top/posts/周记 week12 (11.25~12.1)</link>
+            <guid>http://www.void2024.top/posts/周记 week12 (11.25~12.1)</guid>
+            <pubDate>Thu, 01 Dec 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>暂时结束考试，回归科研之后的第一周吧。</p>
+<h1>学业</h1>
+<p>因为刚从考试周回来，状态有少许下滑，因此几篇经典文献又重新读了下。接着往这个采样和训练加速的方向又读了几篇，不禁感慨下generative mo</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/周记 week12 (11.25~12.1)" target="_blank">http://www.void2024.top/posts/周记 week12 (11.25~12.1)</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/Pasted%20image%2020241203144131.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[周记 week11 (11.18~11.24)]]></title>
+            <link>http://www.void2024.top/posts/周记 week11 (11.18~11.24)</link>
+            <guid>http://www.void2024.top/posts/周记 week11 (11.18~11.24)</guid>
+            <pubDate>Thu, 24 Nov 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>学业</h1>
+<p>第一个考试季结束了！！！</p>
+<p>目前来看凸优化和数据挖掘的两门都在掌控之内，分数可能不会逆天的高，但是都上90，运气好的话冲冲满绩还是问题不大的。凸优化给我的感觉还是非常偏应试那一套，优化方法</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/周记 week11 (11.18~11.24)" target="_blank">http://www.void2024.top/posts/周记 week11 (11.18~11.24)</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241124190611.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[周记 week10 (11.11~11.17)]]></title>
+            <link>http://www.void2024.top/posts/周记 week10 (11.11~11.17)</link>
+            <guid>http://www.void2024.top/posts/周记 week10 (11.11~11.17)</guid>
+            <pubDate>Thu, 17 Nov 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>生日快乐</h1>
+<p>这周终于到过生日的时候了2333, 但是非常不幸地撞上了数据挖掘考试，还得感慨下为什么从小学到本科貌似生日经常考试，不能理解。</p>
+<p>因为要考试，所以不得不跟学长请假了，组里的事情暂时得</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/周记 week10 (11.11~11.17)" target="_blank">http://www.void2024.top/posts/周记 week10 (11.11~11.17)</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241124190606.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[周记 week9 (11.04~11.10)]]></title>
+            <link>http://www.void2024.top/posts/周记 week9 (11.4~11.10)</link>
+            <guid>http://www.void2024.top/posts/周记 week9 (11.4~11.10)</guid>
+            <pubDate>Thu, 10 Nov 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>学业</h1>
+<p>按理来说，其实也就是一个平平无奇的平淡的一周。中间没有什么大事，但是琐碎的小事不少。</p>
+<p>值得一提的就是新的方向终于确定了。通过一段时间的调研还是最终联系决定做生成模型方向的研究了。一篇Ge</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/周记 week9 (11.4~11.10)" target="_blank">http://www.void2024.top/posts/周记 week9 (11.4~11.10)</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/_2024-11-12%20111111.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[周记 week8 (10.28~11.03)]]></title>
+            <link>http://www.void2024.top/posts/周记 week8 (10.28~11.3)</link>
+            <guid>http://www.void2024.top/posts/周记 week8 (10.28~11.3)</guid>
+            <pubDate>Thu, 03 Nov 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>学业/科研</h1>
+<p>计网和数据挖掘大作业撞在了一周，忙的真的想抑郁。计网作业这边，读的论文和其他LLMs for network相比更像是一个tech report。最终组织内容和复现代码的任务基本80</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/周记 week8 (10.28~11.3)" target="_blank">http://www.void2024.top/posts/周记 week8 (10.28~11.3)</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/week8.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[周记 week6&7 (10.14~10.27)]]></title>
+            <link>http://www.void2024.top/posts/周记 week6&amp;7 (10.14~10.27)</link>
+            <guid>http://www.void2024.top/posts/周记 week6&amp;7 (10.14~10.27)</guid>
+            <pubDate>Thu, 27 Oct 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>上周是截稿之后的第一周，轻轻松松地放松了一星期，也正好一星期确实无事发生。上一周倒是事情特别多，索性将两周周记合并。</p>
+<h1>学业</h1>
+<p>截稿啦(*´▽｀)ノノ 出人意料的PKDD投稿之前系统还炸了一次，给</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/周记 week6&7 (10.14~10.27)" target="_blank">http://www.void2024.top/posts/周记 week6&7 (10.14~10.27)</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/week6.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[周记 week5 (10.7~10.13)]]></title>
+            <link>http://www.void2024.top/posts/周记 week5 (10.7~10.13)</link>
+            <guid>http://www.void2024.top/posts/周记 week5 (10.7~10.13)</guid>
+            <pubDate>Thu, 13 Oct 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>科研</h1>
+<p>国庆赶了很长时间的稿，终于赶在12号dll之前交上了论文。滑稽的是竟然CMT还崩了，中间着急忙慌写了封邮件给chair看看是怎么回事，网站的问题能不能就再给宽限一段时间。不得不说chair</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/周记 week5 (10.7~10.13)" target="_blank">http://www.void2024.top/posts/周记 week5 (10.7~10.13)</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/week5_new.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[周记 week4 (9.16~9.22)]]></title>
+            <link>http://www.void2024.top/posts/周记 week4 (9.16~9.22)</link>
+            <guid>http://www.void2024.top/posts/周记 week4 (9.16~9.22)</guid>
+            <pubDate>Thu, 22 Sep 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>平稳的一周，一边推进论文一边过日子，中间放了个中秋的假，好玩的事其实也不少，当然糟心的事也有。</p>
+<h1>钓鱼</h1>
+<p>跟罗神他们一起六个人跑去钓鱼，着实二十岁的年纪，三十岁的身体，四十岁的爱好了。深刻感受到钓</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/周记 week4 (9.16~9.22)" target="_blank">http://www.void2024.top/posts/周记 week4 (9.16~9.22)</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/refs/heads/main/pics_for_post/ee19160f4316289d26edeb98fab655e.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[周记 week3 (9.9~9.15)]]></title>
+            <link>http://www.void2024.top/posts/周记 week3 (9.9~9.15)</link>
+            <guid>http://www.void2024.top/posts/周记 week3 (9.9~9.15)</guid>
+            <pubDate>Thu, 15 Sep 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>开学的第一个星期(*´▽｀)ノノ，精神状态明显比上学期好多了。课内成绩基本上再也不用花太多时间精力，重心可以放在科研，每天的生活不像大一大二那样兵荒马乱了，科研看书打球打游戏，安排的明明白白。</p>
+<h1></h1>
+<br/><p>访问 <a href="http://www.void2024.top/posts/周记 week3 (9.9~9.15)" target="_blank">http://www.void2024.top/posts/周记 week3 (9.9~9.15)</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/lingyin.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[周记 week2 (9.2~9.8)]]></title>
+            <link>http://www.void2024.top/posts/周记 week2 (9.2~9.8)</link>
+            <guid>http://www.void2024.top/posts/周记 week2 (9.2~9.8)</guid>
+            <pubDate>Fri, 09 Sep 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>这一周</h1>
+<p>百无聊赖的一周捏，然后回了学校。科研没咋做，趁着开学前最后好好玩了玩，开学后也许有更多故事可以说说。</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/周记 week2 (9.2~9.8)" target="_blank">http://www.void2024.top/posts/周记 week2 (9.2~9.8)</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/02.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--《使用野生数据集检测OOD》]]></title>
+            <link>http://www.void2024.top/posts/使用野生数据集检测OOD</link>
+            <guid>http://www.void2024.top/posts/使用野生数据集检测OOD</guid>
+            <pubDate>Tue, 06 Sep 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>使用无标签数据预测OOD--HOW DOES UNLABELED DATA PROVABLY HELP OUT-OF-DISTRIBUTION DETECTION</p>
+<p>原文链接：[2402.0350</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/使用野生数据集检测OOD" target="_blank">http://www.void2024.top/posts/使用野生数据集检测OOD</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+        </item>
+        <item>
+            <title><![CDATA[Paper reading--《Learning From Positive and Unlabeled Data-A Survey》]]></title>
+            <link>http://www.void2024.top/posts/Learning From Positive and Unlabeled Data-A Survey</link>
+            <guid>http://www.void2024.top/posts/Learning From Positive and Unlabeled Data-A Survey</guid>
+            <pubDate>Sat, 03 Sep 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>论文通篇简述了PU-learning几个经典的问题，并且详细介绍了PUL到底是什么。</p>
+<h1>PU-learning与传统半监督学习</h1>
+<p>PU-learning是传统半监督学习的变种，与传统半监督学习</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/Learning From Positive and Unlabeled Data-A Survey" target="_blank">http://www.void2024.top/posts/Learning From Positive and Unlabeled Data-A Survey</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics_for_post/saber.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[周记 week1 (8.26~9.1)]]></title>
+            <link>http://www.void2024.top/posts/周记 week1 (8.26~9.1)</link>
+            <guid>http://www.void2024.top/posts/周记 week1 (8.26~9.1)</guid>
+            <pubDate>Thu, 01 Sep 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>关于这个网站</h2>
+<p>开始写的第一篇周记，其实博客很早就建好了只是一直没有往上面更新东西。voidmyworld存在的重要原因一方面是我希望能找到一个形式更加自由的空间存我想写的东西。身为一个攻击性</p>
+<br/><p>访问 <a href="http://www.void2024.top/posts/周记 week1 (8.26~9.1)" target="_blank">http://www.void2024.top/posts/周记 week1 (8.26~9.1)</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (void)</author>
+            <enclosure url="https://raw.githubusercontent.com/xjtu-wjz/void2004/main/pics/p2.webp" length="0" type="image/webp"/>
+        </item>
+    </channel>
+</rss>

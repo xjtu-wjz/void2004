@@ -1,0 +1,1 @@
+import{_ as r,v as i,b as m,e as p,w as o,j as n,aM as f,aN as l,aO as u,aP as d,aQ as y}from"./app-B5BMfZs9.js";const H={};function v(w,x){const e=f,a=l,t=i("router-view"),_=u,c=d,s=y;return m(),p(s,null,{default:o(()=>[n(e),n(a,{title:"分类"}),n(_,null,{default:o(()=>[n(t)]),_:1}),n(c)]),_:1})}const B=r(H,[["render",v]]);export{B as default};
